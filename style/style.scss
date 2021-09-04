@@ -1,0 +1,102 @@
+/* Global settings*/
+html{
+    font-size: 62.5%; 
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+*{-webkit-tap-highlight-color: transparent;}
+*:focus {outline: none;}
+h1{font-size: 4.5rem;}
+h2{font-size: 3.8rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2.4rem;}
+h5{font-size: 2rem;}
+p{font-size: 1.4rem;}
+a{text-decoration: none;}
+
+$bianco: hsl(225, 100%, 94%);
+$viola: hsl(245, 75%, 52%);
+
+$bianco2: hsl(225, 100%, 98%);
+$grigio: hsl(224, 23%, 55%);
+$blu: hsl(223, 47%, 23%);
+
+body{
+    background: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $bianco;
+}
+
+.card{
+    min-width: 320px;
+    min-height: 80vh;
+    background: white;
+    width: 25%;
+    margin: 10vh auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+    h4{font-weight: 900;}
+    p{
+        padding: 2rem 6rem;
+        color: $grigio;
+        text-align: center;
+        line-height: 2rem;
+    }
+}
+
+.card-plan{
+    display: flex;
+    background: $bianco2;
+    border-radius: 10px;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    img{width: 40px;}
+    span{color: $grigio;}
+    a{color: $viola; text-decoration: underline;}
+    a:hover{color: hsl(245, 52%, 58%);}
+}
+
+.card-button{
+    margin: 3rem 0rem;
+    width: 78%;
+    border-radius: 10px;
+    padding: 1.5rem 0rem;
+    background: $viola;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card-button:hover{background:hsl(245, 52%, 58%);}
+
+.card-a{
+    color: $grigio; 
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.card-a:hover{color: $blu;}
+
+
+@media screen and (max-width: 1440px){
+    .card{min-height: 75vh;}
+    .card-text p{padding: 2rem 4rem;}
+}
